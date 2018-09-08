@@ -200,7 +200,8 @@ end
 group :production do
   # Uncomment this gem for Heroku:
   # gem 'rails_12factor'
-  gem 'unicorn'
+  # gem 'unicorn'
+  gem 'helpy_slack', git: 'https://github.com/helpyio/helpy_slack.git', branch: 'master'
 end
 
 ruby '>= 2.2', '< 3.0'
