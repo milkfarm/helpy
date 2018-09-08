@@ -17,6 +17,6 @@ test:
 
 production:
   <<: *default
-  database: helpy_production
-  username: helpy
-  password: <%= ENV['helpy_DATABASE_PASSWORD'] %>
+  database: helpy
+  username: <%= ENV['HELPY_USER'] %>
+  password: <%= ENV['HELPY_PWD'] %>
